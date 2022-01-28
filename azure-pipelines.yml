@@ -39,8 +39,8 @@ stages:
     - task: KubernetesManifest@0
       displayName: Deploy
       inputs:
-        kubernetesServiceConnection: k8s-demo
-        namespace: test2
+        kubernetesServiceConnection: demo-oh-k8s
+        namespace: default
         manifests: |
           ubuntu.yaml
           nginx.yaml
